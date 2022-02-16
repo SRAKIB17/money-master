@@ -5,8 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Money Master</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
-    
+<body class="container m-4">
+    <header>
+        <h5  class="text-lg-center">Save Money and Expance Calculator</h5 >
+    </header>
+    <main>
+        <section class="row">
+            <div class="col-lg-8 col-sm-12">
+                <img src="./images/banar.jpg" alt="" class="img-fluid">
+            </div>
+
+            <div class="col-lg-4 col-sm-12 calculation rounded">
+                <!-- for income  -->
+                
+                <div>
+                    <h5 class="text-center">Income</h6>
+                    <div class="d-flex justify-content-between">
+                        <label for="Income">Income</label><input type="text" name="" id="Income">
+                    </div>
+                    
+                </div>
+                
+                <!-- for Expance -->
+                <div class="d-flex flex-column">
+                    <h5 class="text-center">Expance</h6>
+                    <div class="d-flex justify-content-between">
+                        <label for="expance1">Food:</label>
+                        <input type="text" name="" id="expance1"> 
+                    </div>
+                    
+                    <div class="d-flex justify-content-between">
+                        <label for="expance2">Study:</label>
+                        <input type="text" name="" id="expance2">
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <label for="expance3">Clothes</label><input type="text" name="" id="expance3">
+                    </div>
+                    <button id="calculate" class="w-25 align-self-center btn bg-primary text-light h5 ">Calculate</button>
+                    
+                    <!-- total count  -->
+                    <h5 >
+                        Total Expances: 
+                        <span id="total-expances">
+                            
+                        </span>
+                    </h5 >
+                    <h5 >
+                        Balance: 
+                        <span id="balance">
+
+                        </span>
+                    </h5 >
+                </div>
+                <!-- for saving  -->
+                <div id="savingDiv" class="d-flex align-items-center justify-content-between">
+                    <input type="text" name="" id="save">
+                    <p id="ps">
+
+                    </p>
+                    <button id="saveCal" class="w-25 align-self-center btn bg-primary text-light">Calculate</button>
+                </div>
+                <div>
+                    <h5 >
+                        Saving Amount: <span id="saving"></span>
+                    </h5 >
+                    <h5 >
+                        Remaining Balance: <span id="remainigBal">
+
+                        </span>
+                    </h5 >
+                </div>
+                
+                
+            </div>
+            
+        </section>
+    </main>
 </body>
 </html>

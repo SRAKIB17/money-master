@@ -1,0 +1,11 @@
+div{
+    padding: 5px;
+}
+#ps::after{
+    content: '%';
+    align-self: center;
+}
+.calculation{
+    background-color: whitesmoke;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.164);
+}
