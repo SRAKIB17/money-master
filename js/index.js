@@ -36,12 +36,14 @@ getId('calculate').addEventListener('click',function(){
 
     const totalCalcExpances = 3634;
     if(IncomeValue >= totalCalcExpances){
+        getId('enoughMsg').style.display = 'none'
         console.log(556)
+        totalExpances.innerText = '6456564';
+        getId('balance').innerText = (IncomeValue - totalExpances.innerText);
     }
-    
-    totalExpances.innerText = '6456564';
-    getId('balance').innerText = (IncomeValue - totalExpances.innerText);
-
+    else{
+        getId('enoughMsg').style.display = 'block'
+    }
 })
 
 

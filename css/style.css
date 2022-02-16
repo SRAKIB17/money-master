@@ -33,3 +33,13 @@ div{
     background-color: rgba(154, 250, 154, 0.397);
 }
 /* for enougt money  */
+#enoughMsg{
+    text-align: center;
+    display: none;
+}
+#enoughMsg::after{
+    content: "You don't have enough money";
+    color: rgba(255, 0, 0, 0.767);
+    font-size: 26px;
+    font-weight: bold;
+}
