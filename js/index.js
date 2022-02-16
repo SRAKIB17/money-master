@@ -47,7 +47,6 @@ for (const selectExpanceFeild of selectAllInputFeild) {
         error(getIdExpance,expancesValue);
     })
   
-
 }
 
 // totalExpances calculation 
@@ -100,10 +99,3 @@ getId('saveCal').addEventListener('click',function(){
     }
 })
 
-
-
-
-// for add item 
-// getId('addItemButton').addEventListener('click',function(){
-//     getId('addItem').style.display = 'flex';
-// })
