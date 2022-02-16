@@ -86,23 +86,22 @@ getId('save').addEventListener('keyup',function(event){
 // saving calculation
 getId('saveCal').addEventListener('click',function(){
     const savingAmount = (getId('Income').value * getId('save').value)/100;
-    
 
-    const afterBalance = getId('balance').innerText;
+    const afterBalance = parseFloat(getId('balance').innerText);
 
     if(afterBalance > savingAmount){
-        remaingBal();
+        getId('saving').innerText = savingAmount;
+        getId('remainigBal').innerText = (afterBalance - savingAmount);
+        getId('save-error').style.display = 'none';
+
     }
-    // getId('saving').innerText = 
+    else{
+        getId('save-error').style.display = 'block'
+    }
 })
 
 
-// remaing balance 
-function remaingBal(){
-    const totalExpances = parseFloat(getId('total-expances').innerText);
-    const savingBalance = parseFloat(getId('saving').innerText);
-    getId('remainigBal').innerText = totalExpances - savingBalance;
-}
+
 
 // for add item 
 // getId('addItemButton').addEventListener('click',function(){

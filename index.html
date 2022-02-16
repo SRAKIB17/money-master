@@ -11,7 +11,7 @@
 </head>
 <body class="container m-4">
     <header>
-        <h5  class="text-lg-center">Save Money and Expance Calculator</h5 >
+        <h2  class="text-lg-center">Save Money and Expance Calculator</h2>
     </header>
     <main>
         <section class="row">
@@ -25,7 +25,8 @@
                 <div>
                     <h5 class="text-center">Income</h6>
                     <div class="d-flex justify-content-between">
-                        <label for="Income" id="Income-label">Income</label><input type="text" name="" id="Income">
+                        <label for="Income" class="h6" id="Income-label">Income</label>
+                        <input type="text" name="" id="Income">
 
                         
                     </div>
@@ -36,16 +37,16 @@
                 <div class="d-flex flex-column" id="expanceDiv">
                     <h5 class="text-center">Expance</h6>
                     <div class="d-flex justify-content-between">
-                        <label for="expance1"  id="expance1-label">Food:</label>
+                        <label for="expance1" class="h6"  id="expance1-label">Food:</label>
                         <input type="text" name="" class="expancesInput" id="expance1"> 
                     </div>
                     
                     <div class="d-flex justify-content-between">
-                        <label for="expance2"  id="expance2-label">Rent:</label>
+                        <label for="expance2" class="h6"  id="expance2-label">Rent:</label>
                         <input type="text" name="" class="expancesInput" id="expance2">
                     </div>
                     <div class="d-flex justify-content-between">
-                        <label for="expance3"  id="expance3-label">Clothes</label><input type="text" name="" class="expancesInput" id="expance3">
+                        <label for="expance3" class="h6" id="expance3-label">Clothes</label><input type="text" name="" class="expancesInput" id="expance3">
                     </div>
                     
                 </div>
@@ -78,13 +79,12 @@
                 <div id="savingDiv" class="d-flex align-items-center justify-content-between">
                     <label for="save" class="h6">Save:</label>
                     <input type="text" name="" id="save">
-                    <p id="ps">
-
-                    </p>
+                    <p>%</p>
                     <p id="save-label"></p>
                     <button id="saveCal" class="w-25 align-self-center btn bg-primary text-light">Calculate</button>
                 </div>
                 <div>
+                    <p id="save-error">You can't saving. Get a error..</p>
                     <h5 >
                         Saving Amount: <span id="saving"></span>
                     </h5 >
