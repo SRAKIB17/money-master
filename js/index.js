@@ -29,19 +29,49 @@ getId('Income').addEventListener('change',function(event){
     error('Income',IncomeValue)
     
 })
+
+// for expances input validation 
+// select All Expance  value;
+const selectAllInputFeild = document.querySelectorAll('.expancesInput');
+// run for loop for get id 
+for (const selectExpanceFeild of selectAllInputFeild) {
+    const getIdExpance = selectExpanceFeild.id;
+    // now addEventListener
+    getId(getIdExpance).addEventListener('keyup',function(event){
+        const expancesValue = event.target.value;
+        error(getIdExpance,expancesValue);
+    })
+  
+    getId(getIdExpance).addEventListener('change',function(event){
+        const expancesValue = event.target.value;
+        error(getIdExpance,expancesValue);
+    })
+  
+
+}
+
 // totalExpances calculation 
 getId('calculate').addEventListener('click',function(){
     const IncomeValue = parseFloat(getId('Income').value);
     const totalExpances = getId('total-expances');
+    // select All Expance  value;
+    const selectAllExpance = document.querySelectorAll('.expancesInput');
+    // totalExpances
+    let totalAddExpances = 0;
 
-    const totalCalcExpances = 3634;
-    if(IncomeValue >= totalCalcExpances){
+    // run for loop for get id 
+    for (const selectExpance of selectAllExpance) {
+        totalAddExpances += parseFloat(selectExpance.value);        
+    }
+    if(IncomeValue >= totalAddExpances){
         getId('enoughMsg').style.display = 'none'
-        console.log(556)
-        totalExpances.innerText = '6456564';
+        totalExpances.innerText = totalAddExpances;
         getId('balance').innerText = (IncomeValue - totalExpances.innerText);
     }
     else{
+        totalExpances.innerText = 0;
+        getId('balance').innerText = 0;
+
         getId('enoughMsg').style.display = 'block'
     }
 })
@@ -66,3 +96,8 @@ function remaingBal(){
     const savingBalance = parseFloat(getId('saving').innerText);
     getId('remainigBal').innerText = totalExpances - savingBalance;
 }
+
+// for add item 
+// getId('addItemButton').addEventListener('click',function(){
+//     getId('addItem').style.display = 'flex';
+// })

@@ -33,35 +33,47 @@
                 </div>
                 
                 <!-- for Expance -->
-                <div class="d-flex flex-column">
+                <div class="d-flex flex-column" id="expanceDiv">
                     <h5 class="text-center">Expance</h6>
                     <div class="d-flex justify-content-between">
-                        <label for="expance1">Food:</label>
-                        <input type="text" name="" id="expance1" onkeyup=""> 
+                        <label for="expance1"  id="expance1-label">Food:</label>
+                        <input type="text" name="" class="expancesInput" id="expance1"> 
                     </div>
                     
                     <div class="d-flex justify-content-between">
-                        <label for="expance2">Study:</label>
-                        <input type="text" name="" id="expance2">
+                        <label for="expance2"  id="expance2-label">Rent:</label>
+                        <input type="text" name="" class="expancesInput" id="expance2">
                     </div>
                     <div class="d-flex justify-content-between">
-                        <label for="expance3">Clothes</label><input type="text" name="" id="expance3">
+                        <label for="expance3"  id="expance3-label">Clothes</label><input type="text" name="" class="expancesInput" id="expance3">
                     </div>
-                    <button id="calculate" class="w-25 align-self-center btn bg-primary text-light h5 ">Calculate</button>
                     
+                </div>
+                <!-- Add More item  -->
+                <div class="gap-2" id="addItem">
+                    <input type="text" name="" placeholder="Tite:" id="itemName"><input type="text" placeholder="Expance value" name="" id="itemValue">
+                </div>
+                <div class="d-flex justify-content-end">
+                    <button id="addItemShow" style="font-size:16px" class="btn bg-info text-light"> Add More <i class="fa fa-plus"></i></button>
+                </div>
+                <!-- calculate button  -->
+                
+                <div class="d-flex justify-content-around">
+                    <button id="calculate" class="w-25 btn bg-primary text-light h5 ">Calculate</button>
+                </div>
                     <!-- total count  -->
                     <span id="enoughMsg"></span>
-                    <h5 >
+                    <h5>
                         Total Expances: 
                         <span id="total-expances">0</span>
                     </h5 >
-                    <h5 >
+                    <h5>
                         Balance: 
                         <span id="balance">
 
                         </span>
                     </h5 >
-                </div>
+                
                 <!-- for saving  -->
                 <div id="savingDiv" class="d-flex align-items-center justify-content-between">
                     <label for="save" class="h6">Save:</label>

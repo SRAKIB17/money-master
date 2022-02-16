@@ -32,6 +32,11 @@ div{
     border: 2px solid green;
     background-color: rgba(154, 250, 154, 0.397);
 }
+
+/* add item  */
+#addItem{
+    display: none;
+}
 /* for enougt money  */
 #enoughMsg{
     text-align: center;
