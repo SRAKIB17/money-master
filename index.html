@@ -7,6 +7,7 @@
     <title>Money Master</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="container m-4">
     <header>
@@ -24,7 +25,9 @@
                 <div>
                     <h5 class="text-center">Income</h6>
                     <div class="d-flex justify-content-between">
-                        <label for="Income">Income</label><input type="text" name="" id="Income">
+                        <label for="Income" id="Income-label">Income</label><input type="text" name="" id="Income">
+
+                        
                     </div>
                     
                 </div>
@@ -34,7 +37,7 @@
                     <h5 class="text-center">Expance</h6>
                     <div class="d-flex justify-content-between">
                         <label for="expance1">Food:</label>
-                        <input type="text" name="" id="expance1"> 
+                        <input type="text" name="" id="expance1" onkeyup=""> 
                     </div>
                     
                     <div class="d-flex justify-content-between">
@@ -47,11 +50,12 @@
                     <button id="calculate" class="w-25 align-self-center btn bg-primary text-light h5 ">Calculate</button>
                     
                     <!-- total count  -->
+                    <span id="enoughMsg">
+
+                    </span>
                     <h5 >
                         Total Expances: 
-                        <span id="total-expances">
-                            
-                        </span>
+                        <span id="total-expances">0</span>
                     </h5 >
                     <h5 >
                         Balance: 
@@ -66,6 +70,7 @@
                     <p id="ps">
 
                     </p>
+                    <p id="save-label"></p>
                     <button id="saveCal" class="w-25 align-self-center btn bg-primary text-light">Calculate</button>
                 </div>
                 <div>
@@ -84,5 +89,6 @@
             
         </section>
     </main>
+    <script src="./js/index.js"></script>
 </body>
 </html>

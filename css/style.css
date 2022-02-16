@@ -9,3 +9,27 @@ div{
     background-color: whitesmoke;
     box-shadow: 0 0 10px rgba(0, 255, 255, 0.164);
 }
+
+/* for message  */
+.msg-error{
+    font-size: 1rem;
+}
+.msg-error::after{
+    content: '  Please check value';
+    color: red;
+    font-size: 16px;
+}
+
+
+/* for error  */
+.error {
+    /* border: 2px solid red; */
+    background-color: rgba(255, 153, 153, 0.507);
+}
+
+/* succes  */
+.done {
+    border: 2px solid green;
+    background-color: rgba(154, 250, 154, 0.397);
+}
+/* for enougt money  */
