@@ -85,8 +85,15 @@ getId('save').addEventListener('keyup',function(event){
 })
 // saving calculation
 getId('saveCal').addEventListener('click',function(){
-    getId('saving').innerText = (getId('Income').value * getId('save').value)/100;
-    remaingBal()
+    const savingAmount = (getId('Income').value * getId('save').value)/100;
+    
+
+    const afterBalance = getId('balance').innerText;
+
+    if(afterBalance > savingAmount){
+        remaingBal();
+    }
+    // getId('saving').innerText = 
 })
 
 
