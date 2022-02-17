@@ -2,7 +2,13 @@ div{
     padding: 5px;
 }
 input{
+    font-size: 18px;
+    border-radius: 10px;
     background-color: rgb(245, 245, 245);
+    border: none;
+}
+input:focus{
+    font-size: 18px;
 }
 .calculation{
     background-color: whitesmoke;
@@ -14,17 +20,17 @@ input{
     font-size: 1rem;
 }
 .msg-error::after{
-    content: '  Please check value';
+    content: 'Ops! Only Number';
     color: red;
     font-size: 16px;
 }
 
-
-/* for error  */
+/* for error */
 .error {
-    /* border: 2px solid red; */
+    border: 2px solid red;
     background-color: rgba(255, 153, 153, 0.507);
 }
+
 
 /* succes  */
 .done {
@@ -32,16 +38,15 @@ input{
     background-color: rgba(154, 250, 154, 0.397);
 }
 
-
 /* for enougt money  */
 #enoughMsg{
     text-align: center;
     display: none;
 }
 #enoughMsg::after{
-    content: "You don't have enough money";
+    content: "Something is wrong happand. It can be don't have enough money or wrong input";
     color: rgba(255, 0, 0, 0.767);
-    font-size: 26px;
+    font-size: 18px;
     font-weight: bold;
 }
 #save-error{
@@ -50,3 +55,8 @@ input{
     font-weight: bold;
     align-self: center;
 }
+/* all button 
+ */
+#calculate,#saveCal {
+     font-size: 20px;
+ }
