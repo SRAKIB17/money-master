@@ -20,7 +20,7 @@ input:focus{
     font-size: 1rem;
 }
 .msg-error::after{
-    content: 'Ops! Only Number';
+    content: 'Ops! Only Positive Number';
     color: red;
     font-size: 16px;
 }

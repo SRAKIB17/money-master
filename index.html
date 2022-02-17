@@ -29,11 +29,14 @@
                 
                 <div>
                     <h4 class="text-center">Income</h4>
-                    <div class="d-flex justify-content-between bg-primary bg-opacity-10 rounded p-2">
-                        <label for="Income" class="h5  fw-bold" id="Income-label">Income:</label>
-                        <input type="text" name="" id="Income">
+                    <!-- error msg  -->
+                    <div class="text-end" id="Income-label">
 
-                        
+                    </div>
+                    <div class="d-flex justify-content-between bg-primary bg-opacity-10 rounded p-2">
+                        <label for="Income" class="h5  fw-bold">Income:</label>
+                        <input type="text" name="" id="Income">
+                      
                     </div>
                     
                 </div>
@@ -41,17 +44,28 @@
                 <!-- for Expance -->
                 <div class="d-flex flex-column" id="expanceDiv">
                     <h4 class="text-center">Expance</h4>
+                      <!-- error msg  -->
+                    <div class="text-end"   id="expance1-label">
+
+                    </div>
                     <div class="d-flex justify-content-between bg-primary bg-opacity-10 rounded p-2">
-                        <label for="expance1" class="h5  fw-bold"  id="expance1-label">Food:</label>
+                        <label for="expance1" class="h5  fw-bold">Food:</label>
                         <input type="text" name="" class="expancesInput" id="expance1"> 
                     </div>
-                    
-                    <div class="d-flex justify-content-between bg-primary bg-opacity-10 rounded p-2">
-                        <label for="expance2" class="h5  fw-bold"  id="expance2-label">Rent:</label>
-                        <input type="text" name="" class="expancesInput" id="expance2">
+                     <!-- error msg  -->
+                     <div class="text-end"   id="expance2-label">
+
                     </div>
                     <div class="d-flex justify-content-between bg-primary bg-opacity-10 rounded p-2">
-                        <label for="expance3" class="h5  fw-bold" id="expance3-label">Clothes:</label><input type="text" name="" class="expancesInput" id="expance3">
+                        <label for="expance2" class="h5  fw-bold"  >Rent:</label>
+                        <input type="text" name="" class="expancesInput" id="expance2">
+                    </div>
+                    <!-- error msg  -->
+                    <div class="text-end"   id="expance3-label">
+
+                    </div>
+                    <div class="d-flex justify-content-between bg-primary bg-opacity-10 rounded p-2">
+                        <label for="expance3" class="h5  fw-bold">Clothes:</label><input type="text" name="" class="expancesInput" id="expance3">
                     </div>
                     
                 </div>
@@ -72,9 +86,15 @@
                 <!-- for saving  -->
                 <div id="savingDiv" class="d-flex align-items-center justify-content-between  bg-primary bg-opacity-10 rounded p-2">
                     <label for="save" class="h5  fw-bold">Save:</label>
-                    <input type="text" name="" id="save">
+                    <div>
+                        <!-- error msg  -->
+                        <div class="text-end"   id="save-label">
+                        </div>
+                        <input type="text" name="" id="save">
+                    </div>
+                    
                     <span>%</span>
-                    <p id="save-label"></p>
+
                     <button id="saveCal" class="w-25 align-self-center btn bg-primary text-light">Save</button>
                 </div>
                 <div>
